@@ -1,33 +1,40 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
-const Curso = () => (
+const Curso = ({title, image, price, profesor}) => (
     
     <article className="card">
     <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
-        <img src="https://edteam-media.s3.amazonaws.com/courses/medium/f0b3c8c9-c922-4839-ae4e-4152b8b43c44.png" alt="Poster del curso"/>
+        <img src={image} alt={title}/>
     </div>
     <div className="card__data s-border s-radius-br s-radius-bl s-pxy-2">
-        <h3 className="t5 s-mb-2 s-center">
-        Programación orientada a objetos con Go
-        </h3>
-        <div className="s-mb-2 s-main-center">
-        <div className="card__teacher s-cross-center">
-            <div className="card__avatar s-mr-1">
-            <div className="circle img-container">
-                <img src="https://edteam-media.s3.amazonaws.com/users/thumbnail/66f015b2-0dfb-4ba9-bd0d-f7a7e1855275.jpeg" alt="Tio alexis"/>
-            </div>
-            </div>
-            <span className="small">Alexys Lozada</span>
+        
+        <h3 className="center">{title}</h3> 
+        <div className="s-main-center"> 
+            {`Profesor: ${profesor}`}
         </div>
-        </div>
-        <div className="s-main-center">
-        <a className="button--ghost-alert button--tiny" href="https://google.com">$ 20USD</a>
-        </div>
+        <div className="s-main-center"> 
+            <a className="button--ghost-alert button--tiny" href="google.com">{`$ ${price}` }</a>
+        </div>      
+        
     </div>
     </article>
 
 )
 
+Curso.propTypes = {
+    title: PropTypes.string,
+    image: PropTypes.string,
+    price: PropTypes.string,
+    profesor: PropTypes.string
+}
+
+Curso.defaultProps = {
+    title: "No se encontro titulo",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_hbUApsP7Dsm3dj3X6fvzol4_f9Q6ITmaDA&usqp=CAU",
+    price: "--",
+    profesor: ""
+}
 
 export default Curso;

@@ -2,6 +2,34 @@ import React from 'react';
 import "./styles/styles.scss"
 import Curso from './Curso'
 
+const cursos = [
+  {
+    "title":"React desde cero",
+    "image":"https://www.sigdeletras.com/images/blog/202004_react_leaflet/react.png",
+    "price":"30",
+    "profesor": "Paturlanne Miguel"
+  }, 
+  {
+    "title":"HTML desde cero",
+    "image":"https://s3-us-west-2.amazonaws.com/devcodepro/media/blog/que-es-html-opengraph.png",
+    "price":"20",
+    "profesor": "Alan Bruno"
+  }, 
+  {
+    "title":"Tenis desde cero",
+    "image":"https://images.ole.com.ar/2020/09/19/7NL4kvGum_320x210__1.jpg",
+    "price":"10",
+    "profesor": "Paturlanne Miguel"
+  }, 
+  {
+    "title":"Pipitomi",
+    "image":"https://www.sigdeletras.com/images/blog/202004_react_leaflet/react.png",
+    "price":"35",
+    "profesor": "Paturlanne Miguel"
+  }
+]
+
+
 const App = () => (
     <>
     
@@ -19,12 +47,9 @@ const App = () => (
   </div>
 
   <div className="ed-grid m-grid-3">
-      <Curso />
-      <Curso />
-      <Curso />
-      <Curso />
-      <Curso />
-      <Curso />
+      {
+        cursos.map(c => <Curso title={c.title} image={c.image} price={c.price} profesor={c.profesor}/>)
+      } 
   </div>
   </>
 )
