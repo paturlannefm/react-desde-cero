@@ -1,5 +1,6 @@
 "courses":
 {
+    [
     {
         "id":1,
         "titulo":"React Desde Cero",
@@ -35,4 +36,5 @@
         "price":100,
         "profesor":"Carlitos Veron"
     }
+    ]
 }
