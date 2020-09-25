@@ -1,6 +1,6 @@
 
 [
-     {
+     
      {
         "id":1,
         "title":"React Desde Cero",
@@ -36,6 +36,6 @@
         "price":100,
         "professor":"Carlitos Veron"
     }
-     }
+     
 ]
 
