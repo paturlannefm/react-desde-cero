@@ -1,38 +1,7 @@
 {
-    {
         "id":1,
         "title":"React Desde Cero",
         "image":"https://edteam-media.s3.amazonaws.com/courses/medium/a027fe1a-fcf4-4a1c-8717-c3d52d5f9879.jpg",
         "price":40,
         "professor":"Paturlanne Miguel"
-    },
-    {
-        "id":2,
-        "title":"Simpsons desde cero",
-        "image":"https://edteam-media.s3.amazonaws.com/courses/medium/8cb7bce7-eb7c-4925-af03-8e22f9c0e9a9.jpg",
-        "price":50,
-        "professor":"Alan Bruno"
-    },
-    {
-        "id":3,
-        "title":"Padel curso men sisi",
-        "image":"https://edteam-media.s3.amazonaws.com/courses/medium/f0b3c8c9-c922-4839-ae4e-4152b8b43c44.png",
-        "price":20,
-        "professor":"Pipi Tomi"
-    },
-    {
-        "id":4,
-        "title":"Como vender humo",
-        "image":"https://edteam-media.s3.amazonaws.com/courses/medium/8cb7bce7-eb7c-4925-af03-8e22f9c0e9a9.jpg",
-        "price":90,
-        "professor":"Ariel Orrino"
-    },
-    {
-        "id":5,
-        "title":"Como recibirte sin hacer un pomo",
-        "image":"https://edteam-media.s3.amazonaws.com/courses/medium/fbda9747-85b7-482e-8ffc-547b98031ca4.png",
-        "price":100,
-        "professor":"Carlitos Veron"
-    }
 }
-
