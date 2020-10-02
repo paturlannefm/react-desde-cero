@@ -1,18 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 
-const Curso = ({title, image, price, profesor}) => (
+const CourseCard = ({id, title, image, price, professor}) => (
     
     <article className="card">
     <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
-        <img src={image} alt={title}/>
+        <Link to={`/cursos/${id}`}>
+            <img src={image} alt={title}/>
+        </Link>
     </div>
     <div className="card__data s-border s-radius-br s-radius-bl s-pxy-2">
         
         <h3 className="center">{title}</h3> 
         <div className="s-main-center"> 
-            {`Profesor: ${profesor}`}
+            {`Profesor: ${professor}`}
         </div>
         <div className="s-main-center"> 
             <a className="button--ghost-alert button--tiny" href="google.com">{`$ ${price}` }</a>
@@ -23,18 +26,18 @@ const Curso = ({title, image, price, profesor}) => (
 
 )
 
-Curso.propTypes = {
+CourseCard.propTypes = {
     title: PropTypes.string,
     image: PropTypes.string,
-    price: PropTypes.string,
-    profesor: PropTypes.string
+    price: PropTypes.number,
+    professor: PropTypes.string
 }
 
-Curso.defaultProps = {
+CourseCard.defaultProps = {
     title: "No se encontro titulo",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_hbUApsP7Dsm3dj3X6fvzol4_f9Q6ITmaDA&usqp=CAU",
     price: "--",
-    profesor: ""
+    professor: ""
 }
 
-export default Curso;
+export default CourseCard;
