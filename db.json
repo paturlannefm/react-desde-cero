@@ -1,39 +1,34 @@
 {
-"recipes" : [
-    {
-        "id":1,
-        "title":"React Desde Cero",
-        "image":"https://edteam-media.s3.amazonaws.com/courses/medium/a027fe1a-fcf4-4a1c-8717-c3d52d5f9879.jpg",
-        "price":40,
-        "professor":"Pepitoooo"
-    },
-    {
-        "id":2,
-        "title":"Symfony Desde Cero",
-        "image":"https://edteam-media.s3.amazonaws.com/courses/medium/8cb7bce7-eb7c-4925-af03-8e22f9c0e9a9.jpg",
-        "price":50,
-        "professor":"Alan Bruno"
-    },
-    {
-        "id":3,
-        "title":"Introduccion a la Inteligencia Artificial",
-        "image":"https://edteam-media.s3.amazonaws.com/courses/medium/f0b3c8c9-c922-4839-ae4e-4152b8b43c44.png",
-        "price":20,
-        "professor":"Pipi Tomi"
-    },
-    {
-        "id":4,
-        "title":"Symfony Desde Cero 2",
-        "image":"https://edteam-media.s3.amazonaws.com/courses/medium/8cb7bce7-eb7c-4925-af03-8e22f9c0e9a9.jpg",
-        "price":90,
-        "professor":"Ariel Orrino"
-    },
-    {
-        "id":5,
-        "title":"Introduccion a Api Rest",
-        "image":"https://edteam-media.s3.amazonaws.com/courses/medium/fbda9747-85b7-482e-8ffc-547b98031ca4.png",
-        "price":100,
-        "professor":"Carlitos Veron"
-    }
-]
+ "recipes":[
+   {
+    "recipe_id":"5-743-3480-0004-01",
+    "recipe_state":"disponible",
+    "comments":"Receta cargada exitosamente"
+   },
+   {
+    "recipe_id":"5-743-3480-0008-02",
+    "recipe_state":"disponible",
+    "comments":"Receta cargada exitosamente"
+   },
+   {
+    "recipe_id":"0005-0006-0007-0008-02",
+    "recipe_state":"disponible",
+    "comments":"Receta cargada exitosamente"
+   },
+   {
+    "recipe_id":"0005-0006-0007-0008-02",
+    "recipe_state":"disponible",
+    "comments":"Receta cargada exitosamente"
+   },
+   {
+    "recipe_id":"0005-0006-0007-0008-02",
+    "recipe_state":"disponible",
+    "comments":"Receta cargada exitosamente"
+   },
+   {
+    "recipe_id":"0005-0006-0007-0008-02",
+    "recipe_state":"disponible",
+    "comments":"Receta cargada exitosamente"
+   }
+ ]
 }
