@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 
-const CourseCard = ({id, title, image, price, professor}) => (
+const CourseCard = ({id, title, image, price, professor, onClickFunction}) => (
     
     <article className="card">
     <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
@@ -18,7 +18,7 @@ const CourseCard = ({id, title, image, price, professor}) => (
             {`Profesor: ${professor}`}
         </div>
         <div className="s-main-center"> 
-            <a className="button--ghost-alert button--tiny" href="google.com">{`$ ${price}` }</a>
+            <a className="button--ghost-alert button--tiny" onClick={onClickFunction} href="#">{`$ ${price}` }</a>
         </div>      
         
     </div>

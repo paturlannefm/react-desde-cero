@@ -13,7 +13,7 @@ class CourseGrid extends Component {
     }
 
     componentDidMount() {
-        Axios.get('https://my-json-server.typicode.com/paturlannefm/react-desde-cero/courses/')
+        Axios.get('https://my-json-server.typicode.com/paturlannefm/react-desde-cero/recipes')
         .then(resp => {
             this.setState({
                 courses: resp.data
@@ -21,18 +21,35 @@ class CourseGrid extends Component {
         })
     }
 
+    postCourse = () => {
+       console.log("pepeppe")
+       Axios.post('https://my-json-server.typicode.com/paturlannefm/react-desde-cero/recipes', {
+        recipe_id:"5-743-34802s",
+        recipe_state: 'Fred',
+        comments: 'Flintstone'
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+      };
+
     render() {
         const { courses } = this.state
         return (
             <div className="ed-grid s-grid-2 m-grid-3 l-grid-4">
                 { courses.map(c => (
                 <CourseCard 
-                key={c.id}
-                id={c.id}
-                title={c.title}
-                price={c.price}
+                key={c.recipe_id}
+                id={c.recipe_id}
+                title={c.recipe_state}
+                // price={c.recipe_state}
+                onClickFunction = {this.postCourse}
+                price={254}
                 image={c.image}
-                professor={c.professor} />
+                professor={c.comments} />
                 )) }
             </div>
         )
